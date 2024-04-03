@@ -1,0 +1,10 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Code IA 2024",
+    "details": "Study IA, A conference for developers",
+    "maximumAttendees": 100
+}
+// faço uma requisição POST
+// tenho que informar o tipo do conteudo que estou enviando

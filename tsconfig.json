@@ -11,8 +11,8 @@
     "skipLibCheck": true,
     "moduleResolution": "node16"
   },
-    "scripts": {
-      "dev": "tsx watch stc/server.ts",
-    },
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts"
+  },
   "include": ["src"]
 }
