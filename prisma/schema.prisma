@@ -10,17 +10,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Event {
-  id String @id @default(uuid())
-  title String
-  details String?
-  slug String @unique
-  maximumAttendees Int? @map("maximum_attendees")
+  model Event {
+    id String @id @default(uuid())
+    title String
+    details String?
+    slug String @unique
+    maximumAttendees Int? @map("maximum_attendees")
 
-  attendees Attendee[]   // relacionamento 1:N
+    attendees Attendee[]   // relacionamento 1:N
 
-  @@map("events")
-}
+    @@map("events")
+  }
 model Attendee {
   id Int @id @default(autoincrement())
   name String 

@@ -2,10 +2,9 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Evento Junino !",
+    "title": "Evento Junino dia 23!",
     "details": "",    
-    "maximumAttendees": 1
-
+    "maximumAttendees": 2
 }
 // faço uma requisição POST
 // tenho que informar o tipo do conteudo que estou enviando
@@ -13,10 +12,15 @@ Content-Type: application/json
 ###
 //f7ef1fef-77b7-4ced-8f25-784047ca4c63
 // "events /: eventId / attendees",
-POST http://localhost:3333/events/1aeca962-0457-4a61-b80d-dbbd407a1188/attendees
+POST http://localhost:3333/events/ceb67744-942b-4559-9560-2c3daf90d8f0/attendees
 Content-Type: application/json
 
 {
-    "name": "Merendinha",
-    "email": "merendinhaFazOeli@gmail.com" 
+    "name": "Pedro de teixeira",
+    "email": "pedro@gmail.com" 
 }
+
+
+###
+
+GET http://localhost:3333/events/ceb67744-942b-4559-9560-2c3daf90d8f0
