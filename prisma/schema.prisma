@@ -30,5 +30,6 @@ model Attendee {
 
   even Event @relation(fields: [eventId], references: [id]) //rela
 
+  @@unique([email, eventId]) // Não ter 2 email em um mesmo evento
   @@map("attendees")
 }
