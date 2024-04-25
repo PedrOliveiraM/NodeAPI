@@ -18,9 +18,9 @@ export async function getEvent(app: FastifyInstance) {
             event: z.object({
               id: z.string().uuid(),
               title: z.string(),
-              details: z.string(),
+              details: z.string().nullable(),
               slug: z.string(),
-              maximumAttendees: z.number(),
+              maximumAttendees: z.number().nullable(),
               attendees: z.number(),
             }),
           }),
@@ -52,7 +52,7 @@ export async function getEvent(app: FastifyInstance) {
 
       //se evento for null ele retorna um erro de nao encontrado
       if (event === null) {
-        throw new Error("Event not found event");
+        throw new Error("Event not found");
       }
 
       return reply.send({
