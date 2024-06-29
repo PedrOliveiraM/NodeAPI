@@ -44,8 +44,8 @@ Pass In é uma aplicação de gestão de participantes para eventos presenciais.
 
 ## Uso
 
-Será utilizado por engenheiros, arquitetos, Gestores , Pesquisadores e Acadêmicos.
-Será um sistema web integrado com IA(Inteligência Artificial) para ajudar na busca de melhorias de seus projetos.
+Será utilizado para fazer o cadastro dos usuários e inscrições em eventos.
+Futuramente será integrado com a parte de front-end.
 
 ## Extra
 **Métodos HTTP : GET, POST, PUT, DELETE**
